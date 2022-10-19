@@ -1,8 +1,8 @@
 {
-  "id": "Boxjs_Gist",
-  "name": "Boxjs_Gist",
-  "author": "@xream",
-  "icon": "https://raw.githubusercontent.com/xream/scripts/main/surge/modules/gist/asset/avatar.png",
+  "id": "dcpeng.app",
+  "name": "dcpeng_自用合集",
+  "author": "@dcpeng",
+  "icon": "https://raw.githubusercontent.com/stephenqs/graph/main/profile_photo1.png",
   "repo": "https://github.com/xream/scripts/tree/main",
   "apps": [
     {
