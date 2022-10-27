@@ -82,6 +82,44 @@
         "https://raw.githubusercontent.com/xream/scripts/main/surge/modules/gist/asset/icon.png",
         "https://raw.githubusercontent.com/xream/scripts/main/surge/modules/gist/asset/icon.png"
       ]
+    },
+   {
+      "id": "spotify.token",
+      "name": "spotify歌词翻译",
+      "descs_html": [
+        "原脚本由 <a href='https://github.com/app2smile/rules' target='_blank'>@app2smile</a> 提供, 感谢!",
+        "提供对 @app2smile 大佬 spotify歌词翻译 脚本的翻译token的写入",
+        "<br />",
+        "<h5>token获取方式请看翻译脚本的注释部分</h5>",
+        "<a href=\"https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-lyric.js\">查看脚本</a>"
+      ],
+      "keys": [
+        "@appid",
+        "@securityKey"
+      ],
+      "author": "@app2smile",
+      "repo": "https://github.com/app2smile/rules",
+      "settings": [
+        {
+          "id": "@appid",
+          "name": "appid",
+          "val": "",
+          "type": "text",
+          "desc": "填入你申请的appid"
+        },
+        {
+          "id": "@securityKey",
+          "name": "密钥",
+          "placeholder": "",
+          "val": "",
+          "type": "text",
+          "desc": "填入你申请到的密钥"
+        }
+      ],
+      "icons": [
+        "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Spotify.png",
+        "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Spotify.png"
+      ]
     }
   ]
 }
