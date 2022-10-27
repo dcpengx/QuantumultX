@@ -90,15 +90,15 @@
         "原脚本由 <a href='https://github.com/app2smile/rules' target='_blank'>@app2smile</a> 提供, 感谢!",
         "提供对 @app2smile 大佬 spotify歌词翻译 脚本的翻译token的写入",
         "<br />",
-        "<h5>token获取方式请看翻译脚本的注释部分</h5>",
-        "<a href=\"https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-lyric.js\">查看脚本</a>"
+        "<h5>token获取方式请看脚本的注释部分</h5>",
+        "<a href=\"https://raw.githubusercontent.com/dcpengx/QuantumultX/main/JavaScript/spotify-lyric.js\">查看脚本</a>"
       ],
       "keys": [
         "@dcpeng.appid",
         "@dcpeng.securityKey"
       ],
-      "author": "@app2smile",
-      "repo": "https://github.com/app2smile/rules",
+      "author": "@app2smile @dcpeng",
+      "repo": "https://github.com/dcpengx/QuantumultX",
       "settings": [
         {
           "id": "@dcpeng.appid",
