@@ -94,22 +94,22 @@
         "<a href=\"https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-lyric.js\">查看脚本</a>"
       ],
       "keys": [
-        "@appid",
-        "@securityKey"
+        "@dcpeng.appid",
+        "@dcpeng.securityKey"
       ],
       "author": "@app2smile",
       "repo": "https://github.com/app2smile/rules",
       "settings": [
         {
-          "id": "@appid",
-          "name": "appid",
+          "id": "@dcpeng.appid",
+          "name": "翻译API appid",
           "val": "",
           "type": "text",
           "desc": "填入你申请的appid"
         },
         {
-          "id": "@securityKey",
-          "name": "密钥",
+          "id": "@dcpeng.securityKey",
+          "name": "翻译API 密钥",
           "placeholder": "",
           "val": "",
           "type": "text",
