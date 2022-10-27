@@ -34,8 +34,8 @@ http-response ^https:\/\/spclient\.wg\.spotify\.com\/color-lyrics\/v2\/track\/ s
 */
 // 注意: QX用户需要手动填入appid和securityKey密钥, Surge和Loon用户无需填入!!!!
 const $ = new Env('spotifyLyric');	
-const KEY_APPID = $.getdata('@appid');
-const KEY_SECURITYKEY = $.getdata('@securityKey');
+const KEY_APPID = $.getdata('@dcpeng.appid');
+const KEY_SECURITYKEY = $.getdata('@dcpeng.securityKey');
 
 const options = {
     appid: KEY_APPID,
