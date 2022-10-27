@@ -1,5 +1,8 @@
 /*
-Spotify非中文歌词翻译 Surge和Loon需要>=iOS15 (仓库地址: https://github.com/app2smile/rules)
+QuanX 版 Spotify非中文歌词翻译 
+修改自@app2smile的脚本 (仓库地址: https://github.com/app2smile/rules)
+制作：秦城二院彭医生 @dcpeng
+
 采用百度翻译接口进行翻译,需要先免费申请百度翻译api的id和密钥,然后根据不同软件进行不同配置
 
 -----------申请百度翻译(有标准版和高级版 建议申请高级版)api--------------
@@ -11,28 +14,28 @@ Spotify非中文歌词翻译 Surge和Loon需要>=iOS15 (仓库地址: https://gi
     开通(通用翻译)API服务: https://fanyi-api.baidu.com/choose
     成功后即可看到自己的appid和密钥(不要泄露给任何人): http://api.fanyi.baidu.com/manage/developer
 
-------------软件配置(在文本模式下,填入下方内容)--------------
-如果软件已经加载过Spotify解锁脚本(https://github.com/app2smile/rules#spotify),可不配置MITM域名
-1.Surge:
-[MITM]
-hostname = %APPEND% spclient.wg.spotify.com
-[Script]
-# 修改下方argument中的appid和securityKey,填入自己的appid和密钥
-spotify歌词翻译 = type=http-response,pattern=^https:\/\/spclient\.wg\.spotify\.com\/color-lyrics\/v2\/track\/,requires-body=1,binary-body-mode=1,max-size=0,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-lyric.js,argument=appid=111&securityKey=xxx
+------------软件配置--------------
+注：仅供QuanX使用！
+QuanX:
 
-2.Loon:
-[Mitm]
-hostname =spclient.wg.spotify.com
-[Script]
-# 修改下方argument中的appid和securityKey,填入自己的appid和密钥
-http-response ^https:\/\/spclient\.wg\.spotify\.com\/color-lyrics\/v2\/track\/ script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-lyric.js, requires-body=true, binary-body-mode=true, timeout=10, tag=Spotify歌词翻译, argument=appid=111&securityKey=xxx
+（远程、本地二选一即可）
+1.远程使用方式：直接引用下面链接到 重写-规则资源 里即可
 
-3.qx:
-    - 自行配置MITM域名: spclient.wg.spotify.com
-    - 手动修改填入下方的appid和securityKey密钥, 并配置重写,类型为script-response-body,
-      正则填入^https:\/\/spclient\.wg\.spotify\.com\/color-lyrics\/v2\/track\/
+https://raw.githubusercontent.com/dcpengx/QuantumultX/main/rewrite/spotify_lyric_translation.conf
+
+2.本地使用方式：将重写和hostname分别复制到QX配置文件对应模块下
+[rewrite_local]
+^https:\/\/spclient\.wg\.spotify\.com\/color-lyrics\/v2\/track\/ url script-response-body https://raw.githubusercontent.com/dcpengx/QuantumultX/main/JavaScript/spotify-lyric.js
+
+[mitm]
+hostname= spclient.wg.spotify.com
+
+3.翻译API的token使用：
+添加boxjs订阅：https://raw.githubusercontent.com/dcpengx/QuantumultX/main/dcpeng_boxjs.json
+在 “spotity歌词翻译”内填写你申请到的翻译appid和securityKey
+    
 */
-// 注意: QX用户需要手动填入appid和securityKey密钥, Surge和Loon用户无需填入!!!!
+
 const $ = new Env('spotifyLyric');	
 const KEY_APPID = $.getdata('@dcpeng.appid');
 const KEY_SECURITYKEY = $.getdata('@dcpeng.securityKey');
