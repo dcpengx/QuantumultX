@@ -2,6 +2,11 @@
 # 京东比价 修改版
 原作者：@yichahucha
 ==============Quantumult-X==============
+[rewrite_local]
+^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig) url script-response-body https://raw.githubusercontent.com/dcpengx/QuantumultX/main/JavaScript/JD_Price.js 
+
+[mitm]
+hostname=api.m.jd.com
 
 */
 
