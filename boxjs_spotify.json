@@ -16,21 +16,21 @@
         "<a href=\"https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-lyric.js\">查看脚本</a>"
       ],
       "keys": [
-        "appid",
-        "securityKey"
+        "@appid",
+        "@securityKey"
       ],
       "author": "@app2smile",
       "repo": "https://github.com/app2smile/rules",
       "settings": [
         {
-          "id": "appid",
+          "id": "@appid",
           "name": "appid",
           "val": "",
           "type": "text",
           "desc": "填入你申请的appid"
         },
         {
-          "id": "securityKey",
+          "id": "@securityKey",
           "name": "密钥",
           "placeholder": "",
           "val": "",
