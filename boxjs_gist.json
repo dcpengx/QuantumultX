@@ -83,7 +83,7 @@
         "https://raw.githubusercontent.com/xream/scripts/main/surge/modules/gist/asset/icon.png"
       ]
     },
-   {
+    {
       "id": "spotify.token",
       "name": "spotify歌词翻译",
       "descs_html": [
