@@ -128,8 +128,8 @@
         "@github_private_repo.username",
         "@github_private_repo.token"
       ],
-      "author": "@Peng-YM",
-      "repo": "https://github.com/Peng-YM/QuanX",
+      "author": "@Peng-YM @dcpeng",
+      "repo": "https://github.com/dcpengx/QuantumultX",
       "settings": [
         {
           "id": "@github_private_repo.username",
