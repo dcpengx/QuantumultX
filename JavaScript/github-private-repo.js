@@ -10,7 +10,7 @@ https://raw.githubusercontent.com/dcpengx/QuantumultX/main/rewrite/github-privat
 1️⃣ 登陆Github > 点击头像下拉菜单 > 选择Settings > 左边菜单栏选择最后一个Developer settings > 选择Personal access tokens > Generate new token > Note里面填写token名字 > ☑️下面的勾选框选择第一项repo打钩（所有子项目自动勾选）> 点击Generate token按钮保存并返回。
 （如已有repo权限的token，可直接使用已有的token)
 2️⃣ 在BoxJS里面填入用户名（打开Github，浏览器地址栏应该会显示https://github.com/这里是你的用户名/）和上面的token。
-可直接使用Peng-YM大佬的boxjs订阅：https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/box.js.json)
+可直接使用Peng-YM大佬的boxjs订阅：https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/box.js.json
 或使用我的boxjs订阅：https://github.com/dcpengx/QuantumultX/blob/main/dcpeng_boxjs.json
 
 */
