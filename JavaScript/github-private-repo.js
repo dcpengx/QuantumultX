@@ -20,7 +20,7 @@ let config = {
 };
 
 // load user prefs from box
-const boxConfig = $prefs.read("github_private_repo");
+const boxConfig = $prefs.valueForKey("github_private_repo");
 if (boxConfig) {
   config = JSON.parse(boxConfig);
 }
