@@ -1,7 +1,7 @@
 /*
 为QuanX版 Spotify非中文歌词翻译脚本 添加boxjs方式写入翻译token
 修改自@app2smile的脚本 (仓库地址: https://github.com/app2smile/rules)
-制作：秦城二院彭医生 @dcpeng
+制作：秦城二院彭医生 @dcpeng      2023/06/18
 
 采用百度翻译接口进行翻译,需要先免费申请百度翻译api的id和密钥,然后根据不同软件进行不同配置
 
